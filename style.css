@@ -1,3 +1,35 @@
 body{
     background-color: #051D3B;
+    padding: 32px;
+}
+header{
+    position: relative;
+    height: 56px;
+    width: 100%;
+}
+header div{
+    display: inline-block;
+    position: absolute;
+}
+.logo{
+    top: 12px;
+}
+.campoBusca{
+    left: 312px;
+    right: 312px;
+}
+.campoBusca input{
+    width: 822px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 14px;
+    background-color: #2D415A;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.autor{
+    right: 0;
 }
