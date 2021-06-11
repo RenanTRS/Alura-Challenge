@@ -3,23 +3,14 @@ body{
     padding: 32px;
 }
 header{
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 56px;
-    width: 100%;
     margin-bottom: 40px;
 }
-header div{
-    display: inline-block;
-    position: absolute;
-}
-.logo{
-    top: 12px;
-}
+
 .campoBusca{
-    left: 312px;
-    right: 312px;
-}
-.campoBusca input{
     width: 822px;
     height: 56px;
     border: none;
@@ -30,6 +21,7 @@ header div{
     font-size: 16px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    outline: none;
 }
 .autor{
     right: 0;
