@@ -3,15 +3,17 @@ body{
     padding: 32px;
 }
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 56px;
+    display: grid;
+    grid-template-columns: auto 752px auto;
+    grid-template-rows: 56px;
     margin-bottom: 40px;
 }
-
+.logoAlura{
+    justify-self: start;
+    align-self: center;
+}
 .campoBusca{
-    width: 752px;
+    width: 100%;
     height: 56px;
     border: none;
     border-radius: 8px;
@@ -22,6 +24,9 @@ header{
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     outline: none;
+}
+.autor{
+    justify-self: end;
 }
 
 /*Main*/
