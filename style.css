@@ -82,3 +82,6 @@ nav section{
     font-weight: 400;
     margin-left: 64px;
 }
+.campoBuscaI{
+    outline: none;
+}
