@@ -1,9 +1,13 @@
 body{
     background-color: #051D3B;
     padding: 32px;
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo";
 }
 header{
-    display: grid;
+    grid-area: cabecalho;
     grid-template-columns: auto 752px auto;
     grid-template-rows: 56px;
     margin-bottom: 40px;
