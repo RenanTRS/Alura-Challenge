@@ -8,7 +8,8 @@ body{
 }
 header{
     grid-area: cabecalho;
-    grid-template-columns: auto 752px auto;
+    display: grid;
+    grid-template-columns: auto 51.7% auto;
     grid-template-rows: 56px;
     margin-bottom: 40px;
 }
