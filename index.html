@@ -17,12 +17,35 @@
     
     <main class="principal">
         <nav class="menu">
-            <h2>menu</h2>
+            <h2 class="title">menu</h2>
             <ul class="menu-links">
                 <li><a href="#" class="link-photo"><img src="assets/icontEditor.svg" alt="Icon Editor de código">Editor de código</a></li>
                 <li><a href="#" class="link-photo"><img src="assets/iconComunidade.svg" alt="Icon Comunidade">Comunidade</a></li>
             </ul>
         </nav>
+
+        <div class="seuProjeto">
+            <form class="projeto">
+                <legend class="title">Seu projeto</legend>
+                <input type="text" placeholder="Nome do Projeto" class="inputProjeto">
+                <textarea name="" class="inputProjeto" placeholder="Descrição do projeto"></textarea>
+                
+                <legend class="title">Personalização</legend>
+                <select name="" id="linguagens" class="selectProjeto">
+                    <option value="javaScript">Java Script</option>
+                    <option value="python">Python</option>
+                </select>
+                
+                <select name="" id="cores">
+                    <option value="azul"><div class="corAzul"></div></option>
+                    <option value="laranja"><div class="corLaranja"></div></option>
+                    <option value="verde"><div class="corVerde"></div></option>
+                    <option value="roxo"><div class="corRoxo"></div></option>
+                    <option value="rosa"><div class="corRosa"></div></option>
+                </select>
+                <input type="submit" value="Salvar Projeto" class="inputProjeto-btn">
+            </form>
+        </div>
     </main>
     
 </body>

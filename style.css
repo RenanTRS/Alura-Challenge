@@ -45,7 +45,7 @@ header{
 .menu{
     width: 189px;
 }
-.menu h2{
+.title{
     text-transform: uppercase;
     color: #ffffff;
     font-family: 'Inter', sans-serif;
@@ -70,3 +70,71 @@ header{
 .link-photo img{
     margin-right: 16px;
 }
+
+/*Seu projeto*/
+.seuProjeto{
+    grid-column: 3/3;
+    width: 272px;
+    justify-self: end;
+}
+.seuProjeto form{
+    display: flex;
+    flex-direction: column;
+}
+.inputProjeto{
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 16px;
+    background: #2D415A;
+    padding: 16px 14px;
+    font-size: 16px;
+    outline: none;
+    color: #ffffff;
+}
+.inputProjeto:nth-child(2){
+    height: 56px;
+}
+.inputProjeto:nth-child(3){
+    height: 80px;
+    resize: none;
+    padding: 16px 14px;
+}
+
+.title{
+    margin-top: 40px;
+}
+.selectProjeto{
+    width: 100%;
+    border-radius: 8px;
+    border: 0;
+    height: 56px;
+    margin-top: 16px;
+    outline: none;
+    padding: 16px 14px;
+    background: #2D415A;
+    font-size: 16px;
+    color: #ffffff;
+}
+#cores{
+    padding: 8px;
+    height: 56px;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 16px;
+    outline: none;
+}
+
+
+.inputProjeto-btn{
+    height: 56px;
+    margin-top: 32px;
+    font-size: 16px;
+    color: #051D3B;
+    border-radius: 8px;
+    border: 0;
+    background: #5081FB;
+    font-family: 'Inter', sans-serif;
+}
+
