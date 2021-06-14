@@ -25,19 +25,30 @@
             </ul>
         </nav>
 
+        <div class="editor">
+            <div class="botoes">
+                <img src="assets/ellipseVermelho.svg" alt="Botão Vermelho" class="botao">
+                <img src="assets/ellipseAmarelo.svg" alt="Botão Amarelo" class="botao">
+                <img src="assets/ellipseVerde.svg" alt="Botão Verde" class="botao">
+            </div>
+            <div>
+                <textarea class="campoTexto"></textarea>
+            </div>
+        </div>
+
         <div class="seuProjeto">
             <form class="projeto">
                 <legend class="title">Seu projeto</legend>
                 <input type="text" placeholder="Nome do Projeto" class="inputProjeto">
-                <textarea name="" class="inputProjeto" placeholder="Descrição do projeto"></textarea>
+                <textarea class="inputProjeto" placeholder="Descrição do projeto"></textarea>
                     
-                <legend class="title">Personalização</legend>
+                <legend class="title" id="personalizacao">Personalização</legend>
                 <select name="" id="linguagens" class="selectProjeto">
                     <option value="javaScript">Java Script</option>
                     <option value="python">Python</option>
                 </select>
                     
-                <select name="" id="cores">
+                <select id="cores">
                     <option value="azul"><div class="corAzul"></div></option>
                     <option value="laranja"><div class="corLaranja"></div></option>
                     <option value="verde"><div class="corVerde"></div></option>

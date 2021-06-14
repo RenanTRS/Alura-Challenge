@@ -9,7 +9,7 @@ body{
 header{
     grid-area: cabecalho;
     display: grid;
-    grid-template-columns: auto 51.7% auto;
+    grid-template-columns: auto 51.7% 40px 22.65%;
     grid-template-rows: 56px;
     margin-bottom: 40px;
 }
@@ -29,9 +29,11 @@ header{
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     outline: none;
+    grid-column: 2/2;
 }
 .autor{
     justify-self: end;
+    grid-column: 4/4;
 }
 
 /*Main*/
@@ -40,7 +42,7 @@ header{
 .principal{
     grid-area: conteudo;
     display: grid;
-    grid-template-columns: auto 51.7% 22.5%;
+    grid-template-columns: auto 51.7% 40px 22.65%;
 }
 .menu{
     width: 189px;
@@ -71,13 +73,46 @@ header{
     margin-right: 16px;
 }
 
+/*Editor*/
+.editor{
+    width: 100%;
+    height: 366px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 32px;
+    background: #6BD1FD;
+}
+.botoes{
+    width: 100%;
+    height: 52px;
+    border-radius: 8px 8px 0 0;
+    background: #141414;
+    box-sizing: border-box;
+    padding: 8px;
+}
+.botao{
+    margin: 8px 0 0 8px;
+}
+.campoTexto{
+    width: 100%;
+    height: 250px;
+    background: #141414;
+    border: 0;
+    resize: 0;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+    padding: 0 16px 16px 16px;
+    color: #ffffff;
+}
+
 /*Seu projeto*/
 .teste{
     grid-column: 3/3;
     border: 1px solid red;
 }
 .seuProjeto{
-    grid-column: 3/3;
+    grid-column: 4/4;
     width: 272px;
     justify-self: end;
 }
@@ -106,9 +141,6 @@ header{
     padding: 16px 14px;
 }
 
-.title{
-    margin-top: 40px;
-}
 .selectProjeto{
     width: 100%;
     border-radius: 8px;
@@ -121,6 +153,9 @@ header{
     font-size: 16px;
     color: #ffffff;
 }
+#personalizacao{
+    margin-top: 40px;
+}
 #cores{
     padding: 8px;
     height: 56px;
@@ -129,7 +164,6 @@ header{
     margin-top: 16px;
     outline: none;
 }
-
 
 .inputProjeto-btn{
     height: 56px;
