@@ -37,50 +37,36 @@ header{
 /*Main*/
 
 /*nav*/
-nav{
-    width: 189px;
-    height: 146px;
+.principal{
+    grid-area: conteudo;
+    display: grid;
+    grid-template-columns: auto 51.7% auto;
 }
-nav h2{
-    color: white;
+.menu{
+    width: 189px;
+}
+.menu h2{
     text-transform: uppercase;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    margin-bottom:16px;
+    letter-spacing: .4rem;
 }
-nav section{
-    position: relative;
-    height: 48px;
-    margin-bottom: 10px;
+.menu-links{
+    display: flex;
+    flex-direction: column;
 }
-
-.editor div{
-    display: inline-block;
-    position: absolute;
+.menu-links li{
+    margin-top: 16px;
 }
-.editorCodigo{
-    top: 15px;
+.link-photo{
+    display: flex;
+    align-items: center;
     color: white;
     font-family: 'Inter', sans-serif;
+    text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
-    margin-left: 64px;
 }
-
-.comunidade div{
-    display: inline-block;
-    position: absolute;
-}
-.tagComunidade{
-    top: 15px;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    margin-left: 64px;
-}
-.campoBuscaI{
-    outline: none;
+.link-photo img{
+    margin-right: 16px;
 }
