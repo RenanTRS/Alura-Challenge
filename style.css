@@ -44,6 +44,12 @@ header{
     display: grid;
     grid-template-columns: auto 51.7% 40px 22.65%;
 }
+.principalComunidade{
+    /*Comunidade*/
+   grid-area: conteudo; 
+   display: grid;
+   grid-template-columns: auto 123px auto;
+}
 .menu{
     width: 189px;
 }
