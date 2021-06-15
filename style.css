@@ -44,12 +44,6 @@ header{
     display: grid;
     grid-template-columns: auto 51.7% 40px 22.65%;
 }
-.principalComunidade{
-    /*Comunidade*/
-   grid-area: conteudo; 
-   display: grid;
-   grid-template-columns: auto 123px auto;
-}
 .menu{
     width: 189px;
 }
@@ -197,3 +191,21 @@ header{
     cursor: pointer;
 }
 
+/*--Comunidade--*/
+.principalComunidade{
+    /*Comunidade*/
+    grid-area: conteudo; 
+    display: grid;
+    grid-template-columns: auto 123px auto;
+}
+.corpo{
+    grid-column: 3/3;
+}
+.bloco{
+    display: grid;
+    grid-template-areas: 
+        "código"
+        "texto";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
