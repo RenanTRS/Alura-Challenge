@@ -1,15 +1,15 @@
 body{
     background-color: #051D3B;
-    padding: 32px;
     display: grid;
     grid-template-areas: 
         "cabecalho"
         "conteudo";
+    padding: 32px;
 }
 header{
     grid-area: cabecalho;
     display: grid;
-    grid-template-columns: auto 51.7% 40px 22.65%;
+    grid-template-columns: 189px 123px 51.7% 40px auto;
     grid-template-rows: 56px;
     margin-bottom: 40px;
 }
@@ -29,11 +29,11 @@ header{
     font-weight: 400;
     font-family: 'Inter', sans-serif;
     outline: none;
-    grid-column: 2/2;
+    grid-column: 3/3;
 }
 .autor{
     justify-self: end;
-    grid-column: 4/4;
+    grid-column: 5/5;
 }
 
 /*Main*/
@@ -42,7 +42,7 @@ header{
 .principal{
     grid-area: conteudo;
     display: grid;
-    grid-template-columns: auto 51.7% 40px 22.65%;
+    grid-template-columns: 189px 123px 51.7% 40px auto;
 }
 .menu{
     width: 189px;
@@ -74,6 +74,9 @@ header{
 }
 
 /*Editor*/
+.campo{
+    grid-column: 3/3;
+}
 .editor{
     width: 100%;
     height: 366px;
@@ -121,12 +124,8 @@ header{
 }
 
 /*Seu projeto*/
-.teste{
-    grid-column: 3/3;
-    border: 1px solid red;
-}
 .seuProjeto{
-    grid-column: 4/4;
+    grid-column: 5/5;
     width: 272px;
     justify-self: end;
 }
@@ -196,16 +195,125 @@ header{
     /*Comunidade*/
     grid-area: conteudo; 
     display: grid;
-    grid-template-columns: auto 123px auto;
+    grid-template-columns: 189px 123px auto;
 }
 .corpo{
     grid-column: 3/3;
+    display: flex;
+    flex-wrap: wrap;
 }
-.bloco{
+.blocoCard{
     display: grid;
     grid-template-areas: 
-        "código"
+        "codigo"
         "texto";
+    grid-template-columns: 100%;
+    grid-template-rows: 288px auto;
+    box-sizing: border-box;
+    width: 475px;
+}
+.blocoCard:nth-child(odd){
+    margin: 0 24px 24px 0;
+}
+.blocoCard:nth-child(even){
+    margin-bottom: 24px;
+}
+.blocoCard-Codigo{
+    grid-area: codigo;
+    grid-row: 1/1;
+    box-sizing: border-box;
+    padding: 24px;
+    background: #8FEB6B;
+    border-radius: 8px;
+}
+#laranja{
+    background: red;
+}
+#orange{
+    background: orange;
+}
+#blue{
+    background: lightblue;
+}
+.blocoCard-janela{
+    box-sizing: border-box;
+    background: #141414;
+    width: 100%;
+    height: 33px;
+    padding: 6px;
+    border-radius: 8px 8px 0 0;
+}
+.janela-btn{
+    margin: 6px 0 0 6px;
+}
+.blocoCard-editorcod{
+    box-sizing: border-box;
+    background: #141414;
+    width: 100%;
+    height: 207px;
+    outline: 0;
+    resize: none;
+    color: white;
+    padding: 0 12px 12px 12px;
+    border-radius: 0 0 8px 8px;
+    border: 0;
+}
+.blocoCard-Texto{
+    grid-area: texto;
+    grid-row: 2/2;
+    box-sizing: border-box;
+    padding: 24px;
+    background: #041832;
+    border-radius: 0 0 8px 8px;
+    display: grid;
+    grid-template-areas: 
+        "cabecalho"
+        "interacao";
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+}
+.blocoCard-titulo{
+    grid-area: cabecalho;
+    grid-row: 1/1;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+.blocoCard-titulo h2{
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.blocoCard-titulo p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.blocoCard-icons{
+    grid-area: interacao;
+    grid-row: 2/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.blocoCard-iconsSocial{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.iconsSocial{
+    width: 58px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.blocoCard-iconsMedia{
+    width: 105px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
