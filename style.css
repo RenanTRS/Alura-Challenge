@@ -98,12 +98,26 @@ header{
     height: 250px;
     background: #141414;
     border: 0;
-    resize: 0;
+    resize: none;
     outline: none;
     box-sizing: border-box;
     border-radius: 0 0 8px 8px;
     padding: 0 16px 16px 16px;
     color: #ffffff;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 24%);
+}
+.highlight-btn{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin-top: 32px;
+    border-radius: 8px;
+    border: 0;
+    background: #0B254A;
+    height: 56px;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 /*Seu projeto*/
